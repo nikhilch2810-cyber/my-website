@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONTACT US</title>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://maps.googleapis.com/maps/api/js?key=PASTE_YOUR_API_KEY_HERE&callback=initMap" async defer></script>
+
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="logo">
+            <img src="images/loggoo.png" alt="SAR Logo">
+        </div>
+
+        <!-- NAVIGATION -->
+        <nav class="main-nav nav-middle">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="trunkey.html">Solutions</a></li>
+                
+
+                <!-- MEGA DROPDOWN - Products -->
+                <li class="mega-dropdown-parent">
+                    <a href="product_hub.html" class="nav-link">
+                        Products <i class="fas fa-chevron-down arrow-icon"></i>
+                    </a>
+                    <div class="mega-menu-container">
+                        <div class="mega-content-grid">
+                            <div class="mega-col">
+                                <h4 class="neon-title"><i class="fas fa-box-open"></i> Products</h4>
+                                <ul>
+                                    <li><a href="product.html">Industrial Products</a></li>
+                                    <li><a href="manual.html">Technical Manuals</a></li>
+                                </ul>
+                            </div>
+                            <div class="mega-col">
+                                <h4 class="neon-title"><i class="fas fa-video"></i> Tutorials</h4>
+                                <ul>
+                                    <li><a href="video.html">Video Tutorials</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <!-- MEGA DROPDOWN - Resources -->
+                <li class="mega-dropdown-parent">
+                    <a href="resource.html" class="nav-link">
+                        Resources <i class="fas fa-chevron-down arrow-icon"></i>
+                    </a>
+                    <div class="mega-menu-container">
+                        <div class="mega-content-grid">
+                            <div class="mega-col">
+                                <h4 class="neon-title"><i class="fas fa-face-grin-beam-sweat"></i> Events</h4>
+                                <ul>
+                                    <li><a href="event.html">Webinars & Events</a></li>
+                                    <li><a href="celebration.html">Celebration & Culture</a></li>
+                                </ul>
+                            </div>
+                            <div class="mega-col">
+                                <h4 class="neon-title"><i class="fas fa-user"></i> Employee Voice</h4>
+                                <ul>
+                                    <li><a href="employee.html">EchoHub</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- CONTACT BUTTON -->
+        <div class="contact-right">
+            <a href="contact.html">Contact Us</a>
+        </div>
+
+        <!-- HAMBURGER -->
+        <div class="mobile-menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+
+    <main class="contact-section">
+        <h2>GET IN TOUCH
+        </h2>
+        <h3>Our teams are here to help</h3>
+        <p>Questions, bug reports, feedback — we’re here for it all.</p><br>
+        <div class="contact-grid">
+            
+            <div class="card card-sales">
+                <i class="fas fa-phone-alt card-icon"></i>
+                <h3>Talk to Sales</h3>
+                <p>Connect with our sales team for product inquiries and pricing.</p><br>
+                
+                <button class="btn-primary" id="schedule-call-btn">Schedule a Call</button>
+                
+                <div class="contact-details-3d" id="sales-details">
+                    <div class="detail-option"><i class="fas fa-mobile-alt"></i> Call: +91/9811910492</div>
+                    <div class="detail-option"><i class="fas fa-envelope"></i> Email: contact@sar-btpc.com</div>
+                </div>
+            </div>
+
+            <div class="card card-support">
+                <i class="fas fa-tools card-icon"></i>
+                <h3>Technical Support</h3>
+                <p>Get assistance with demos, setup, or technical issues.</p><br>
+                <button class="btn-primary" id="submit-ticket-btn">Schedule a Call</button>
+
+                 <div class="contact-details-3d" id="support-details">
+                    <div class="detail-option"><i class="fas fa-mobile-alt"></i> Support Line: +91/9811910492</div>
+                    <div class="detail-option"><i class="fas fa-envelope"></i> Email: contact@sar-btpc.com</div>
+                </div>
+            </div>
+
+            <div class="card card-demo">
+                <i class="fas fa-desktop card-icon"></i>
+                <h3>Request a Demo</h3>
+                <p>See our solution in action. Schedule a personalized demonstration now.</p><br>
+                <button class="btn-primary btn-cta" id="request-demo-btn">Request Demo</button>
+            </div>
+<div class="map-and-addresses">
+    <iframe
+        src="https://www.google.com/maps?q=25+First+Floor+Vatika+Market+Place+Sector+83+Gurugram+Haryana+122012&output=embed"
+        width="100%"
+        height="400"
+        style="border:0; border-radius:8px;"
+        allowfullscreen
+        loading="lazy">
+    </iframe>
+
+    <div class="address-group">
+        <div class="address-box">
+            <h4>COMPANY LOCATION</h4>
+            <p>
+                25 First Floor, Vatika Market Place<br>
+                Sector 83, Gurugram<br>
+                Haryana – 122012, India
+            </p>
+        </div>
+    </div>
+</div>
+
+        </div>
+    </main>
+    
+    <div id="demo-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h3>Schedule Your Personalized Demo</h3>
+            <form id="demo-form">
+                <div class="form-row">
+                    <input type="text" name="firstName" placeholder="First Name" required>
+                    <input type="text" name="lastName" placeholder="Last Name" required>
+                </div>
+                <input type="text" name="address" placeholder="Address">
+                <div class="form-row">
+                    <input type="email" name="email" placeholder="Email Address" required>
+                    <input type="tel" name="contactNumber" placeholder="Contact Number (Optional)">
+                </div>
+                <div class="form-row">
+                    <select name="region" required>
+                        <option value="">Select Region/Country *</option>
+                        <option value="India" selected>India</option>
+                        <option value="USA">USA</option>
+                        <option value="UK">UK</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+                <textarea name="message" placeholder="Message/Specific Inquiry (Optional)"></textarea>
+                <button type="submit" class="btn-primary">Submit Demo Request</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="section-divider"></div>
+     <footer class="aa-footer">
+
+        <!-- TOP BRAND ROW -->
+        <div class="aa-footer-top">
+            <div class="aa-brand">
+                <img src="images/loggoo.png" alt="SAR Logo">
+            </div>
+            <div class="aa-divider-vertical"></div>
+            <div class="aa-tagline">
+                <p>Digitally transforming businesses with innovation and excellence since 2019.</p>
+            </div>
+        </div>
+
+        <div class="aa-footer-line"></div>
+
+        <!-- FOOTER COLUMNS -->
+        <div class="aa-footer-bottom">
+
+            <!-- SOLUTION HUB -->
+            <div class="aa-footer-col">
+                <h4>SOLUTION HUB</h4>
+                <ul>
+                    <li><a href="trunkey.html">Turnkey Solutions</a></li>
+                </ul>
+
+                <br>
+
+                <!-- INDUSTRIAL PRODUCTS -->
+                <div class="aa-footer-col">
+                    <h4>Industrial Products</h4>
+                    <ul>
+                        <li><a href="product.html">Products</a></li>
+                        <li><a href="manual.html">Technical Manuals</a></li>
+                        <li><a href="video.html">Video Tutorials</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- RESOURCES -->
+            <div class="aa-footer-col">
+                <h4>RESOURCES</h4>
+                <ul>
+                    <li><a href="event.html">Events & Webinars</a></li>
+                    <li><a href="celebration.html">Celebration & Culture</a></li>
+                    <li><a href="employee.html">EchoHub</a></li>
+                </ul>
+            </div>
+
+            <!-- COMPANY / CONTACT -->
+            <div class="aa-footer-col">
+                <h4>Company</h4>
+                <ul class="contact-list">
+                    <li><a href="about.html">About US</a></li>
+                    <li><a href="contact.html">Contact US</a></li>
+                </ul>
+            </div>
+
+            <!-- SOCIAL MEDIA -->
+            <div class="social-box-container">
+                <div class="social-glow-box">
+                    <h4>JOIN US ON SOCIAL MEDIA</h4>
+                    <div class="social-icons-grid">
+                        <a href="#" class="social-btn facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-btn instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-btn x-twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-btn linkedin"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- COPYRIGHT -->
+        <div class="aa-footer-copy">
+            © 2025 SAR Business Transformation Consultants. All Rights Reserved.
+        </div>
+    </footer>
+
+   
+
+    <script src="contact.js"></script>
+</body>
+</html>
